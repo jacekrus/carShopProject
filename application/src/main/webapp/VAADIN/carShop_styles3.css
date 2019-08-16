@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import "../reindeer/legacy-styles.css";
+@import "../reindeer/styles.css";
+@import "../themes/mytheme/styles.css"
+
+.blaFont {
+}
+
+.specialFont {
+	color: #000;
+	letter-spacing: 4px;
+	font-family: "Segoe UI",Arial,sans-serif;
+	font-size: 32px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+
+.cartImg {
+	background-image: url("themes/mytheme/img/Cart.PNG") !important;
+	border: none !important;
+}
+
+.cartImg:hover {
+	background-image: url("themes/mytheme/img/Cart_hover.PNG") !important;
+}
+
+.cartImg:focus {
+	outline: 0 !important;
+}
+
+.logoutButton {
+	background-image: url("themes/mytheme/img/logoutImg.png") !important;
+	border: none !important;
+}
+
+.productFrame {
+}
+
+.productFrame:hover {
+	border: 2px solid rgba(0,0,0,0.1);
+	border-radius: 8px;
+	box-shadow: 0px 0px 5px;
+}
+
+.fontBold {
+	font-weight: bold;
+}
+
+.marginLeft {
+	margin-left: 200px;
+}
+
+.v-gridlayout-spacing-on {
+	height: 40px !important;
+	overflow: auto;
+}
+
+.cartIcon {
+	background-image: url("themes/mytheme/img/shoppingCart.png") !important;
+	border: none !important;
+}
+
+.cartIcon:focus {
+	outline: 0 !important;
+}
+
+.minWidth {
+	min-width: 250px;
+}
+
+.v-button-primary {
+	min-width: 10px !important;
+}
+
+.cartItem {
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+
+.positionRelative {
+	position: relative;
+}
+
+.sideMenu {
+	min-width: 180px;
+	padding: 0px 0px 37px !important;
+}
+
