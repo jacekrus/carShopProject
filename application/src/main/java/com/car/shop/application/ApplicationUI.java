@@ -88,7 +88,7 @@ public class ApplicationUI extends UI implements BroadcastListener {
 			MainView mainView = new MainView(viewProvider, mainLayout);
 			mainLayout.addComponent(mainView);
 			if(showLoginNotification) {
-				LoginUtils.showLoginNotification("Login successful!", Type.HUMANIZED_MESSAGE, Position.MIDDLE_CENTER);
+				LoginUtils.showNotification("Login successful!", Type.HUMANIZED_MESSAGE, Position.MIDDLE_CENTER);
 			}
 		});
 	}

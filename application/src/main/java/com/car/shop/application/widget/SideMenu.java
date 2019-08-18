@@ -1,14 +1,15 @@
 package com.car.shop.application.widget;
 
+import com.car.shop.application.utils.LoginUtils;
 import com.car.shop.application.utils.NavigationNames;
 import com.vaadin.server.VaadinSession;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.themes.ValoTheme;
 
 public class SideMenu extends CssLayout {
@@ -54,7 +55,7 @@ public class SideMenu extends CssLayout {
 		VerticalLayout menuButtons = new VerticalLayout();
 		menuButtons.setSpacing(true);
 		menuButtons.setMargin(true);
-		if("admin".equals(getLoggedInUsername())) {
+		if("admin".equals(LoginUtils.getLoggedInUsername())) {
 			Button adminButton = setUpMenuButton("Admin", e -> UI.getCurrent().getNavigator().navigateTo(NavigationNames.ADMIN_VIEW));
 			menuButtons.addComponent(adminButton);
 		}
@@ -99,8 +100,4 @@ public class SideMenu extends CssLayout {
 		currentUI.getSession().getSession().invalidate();
 	}
 	
-	private String getLoggedInUsername() {
-		return String.valueOf(UI.getCurrent().getSession().getSession().getAttribute("user"));
-	}
-
 }

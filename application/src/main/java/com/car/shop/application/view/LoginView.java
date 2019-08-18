@@ -27,7 +27,7 @@ public class LoginView extends LoginForm {
 			Broadcaster.broadcast(new LoginNotification(UI.getCurrent().getSession().getSession().getId()));
 		}
 		else {
-			LoginUtils.showLoginNotification("Wrong username or password", Type.ERROR_MESSAGE, Position.BOTTOM_CENTER);
+			LoginUtils.showNotification("Wrong username or password", Type.ERROR_MESSAGE, Position.BOTTOM_CENTER);
 		}
 	}
 
