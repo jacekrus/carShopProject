@@ -12,7 +12,6 @@ import com.car.shop.application.interceptor.LifecycleLogged;
 import com.car.shop.application.model.UserEntity;
 import com.car.shop.application.service.DataAccessService;
 import com.car.shop.application.service.UserService;
-import com.car.shop.application.utils.AuthenticationServiceProvider;
 
 //@Dependent
 //@Stateless

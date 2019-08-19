@@ -10,6 +10,8 @@ public final class NavigationNames {
 	
 	public static final String STATISTICS_VIEW = "statisticsView";
 	
+	public static final String LOGIN_VIEW = "loginView";
+	
 	public static final String DEFAULT = "";
 	
 }

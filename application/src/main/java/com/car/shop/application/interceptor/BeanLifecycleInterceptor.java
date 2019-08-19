@@ -7,23 +7,27 @@ import javax.annotation.PreDestroy;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
 
+import org.jboss.logging.Logger;
+
 @Interceptor
 @LifecycleLogged
 public class BeanLifecycleInterceptor implements Serializable {
 	
 	private static final long serialVersionUID = -1211791898003640220L;
 	
+	private static Logger logger = Logger.getLogger("Bean Lifecycle");
+	
 	public BeanLifecycleInterceptor() {}
 	
 	@PostConstruct
 	public void logCreation(InvocationContext ctx) throws Exception {
-		System.out.println(getBeanName(ctx) + " CREATED");
+		logger.info(getBeanName(ctx) + " CREATED \n");
 		ctx.proceed();
 	}
 	
 	@PreDestroy
 	public void logDestruction(InvocationContext ctx) throws Exception {
-		System.out.println(getBeanName(ctx) + " DESTROYED");
+		logger.info(getBeanName(ctx) + " DESTROYED \n");
 		ctx.proceed();
 	}
 	

@@ -2,11 +2,11 @@ package com.car.shop.application;
 
 import javax.inject.Inject;
 
+import com.car.shop.application.bean.AuthenticationServiceProvider;
 import com.car.shop.application.notification.AbstractNotification;
 import com.car.shop.application.notification.Broadcaster;
 import com.car.shop.application.notification.Broadcaster.BroadcastListener;
 import com.car.shop.application.notification.LoginNotification;
-import com.car.shop.application.utils.AuthenticationServiceProvider;
 import com.car.shop.application.utils.LoginUtils;
 import com.car.shop.application.view.LoginView;
 import com.car.shop.application.view.MainView;

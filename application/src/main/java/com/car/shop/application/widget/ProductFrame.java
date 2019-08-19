@@ -33,6 +33,7 @@ public class ProductFrame extends VerticalLayout {
 		productName.addStyleName("fontBold");
 		Label price = new Label(product.getPrice().toString());
 		VerticalLayout nameAndPriceContainer = new VerticalLayout(productName, price);
+		nameAndPriceContainer.addStyleName("productFrame");
 		
 		this.addComponents(productImg, nameAndPriceContainer, cartButton);
 	}
